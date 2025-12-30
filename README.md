@@ -43,3 +43,38 @@ critical section is not synchronized
 
 <img width="1020" height="513" alt="after_modification" src="https://github.com/user-attachments/assets/9bd1c5ad-582a-42f9-be16-6f3496b7c8e1" />
 
+---
+
+# Task 2
+
+This exercise simulates trains travelling along a single rail track through critical sections. Your task is to insert
+semaphore operation that will prevent train collisions. Two trains will collide if they happen to be in a critical
+section at the same time.
+
+
+<img width="466" height="159" alt="image" src="https://github.com/user-attachments/assets/31674e18-42bc-45ae-aeec-1a6d4171e946" />
+
+Figure shows two train yards (A and B) with two trains in each yard ready to leave. You need the following files
+which you have already downloaded in the zip file::
+* Train1.java
+* Trainc1.java
+* Semaphore.java
+* Util.java
+
+## 1- Compile all Java files and run Trainc1
+
+It will simulate the trains movement through the critical sections. It is
+just a control program that starts trains from each yard.
+
+
+<img width="1022" height="570" alt="result_from_trains_collisions2" src="https://github.com/user-attachments/assets/bbb06fa9-e7eb-4a7d-967a-cdcce720d762" />
+
+## 2- Modying on code to fix the collision between trains
+
+<img width="626" height="372" alt="fix_train_collision" src="https://github.com/user-attachments/assets/3a220ba9-0b32-496a-adb4-ec0df0e9a2c0" />
+
+## 3- And this is the result after fix the collision
+
+<img width="1021" height="571" alt="after_fix_collision" src="https://github.com/user-attachments/assets/2ee9dace-1f4f-4603-bf29-8c1133c0a103" />
+
+
