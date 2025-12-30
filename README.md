@@ -77,4 +77,42 @@ just a control program that starts trains from each yard.
 
 <img width="1021" height="571" alt="after_fix_collision" src="https://github.com/user-attachments/assets/2ee9dace-1f4f-4603-bf29-8c1133c0a103" />
 
+--- 
+
+# Task 3
+
+* We have a shared resource is balance → data.balance initially = 100
+* Maximum balance is 100 and minmum is 0
+* We have Producer Deposite 1 must block when if balance = 100
+* And we have consumer withdraw 5 and must block when balance < 5
+* Find a solution using semaphores
+
+## 1- We will use three semaphores
+
+* mutex (binary semaphore) → protects the critical section (mutual exclusion)
+* canDeposite (counting semaphore) → Represents how much space is left before hitting 100
+* canWithdraw (counting semaphore) → Represents how much money is available to withdraw
+
+### so we will initialize Semaphore in P1P2s class
+
+<img width="622" height="350" alt="3_Semaphore_Initialization" src="https://github.com/user-attachments/assets/b924d004-d6ec-409f-bd96-3bace1cae643" />
+
+## 2- We will change P1 to become Producer.java (Deposite 1)
+
+<img width="683" height="806" alt="producer" src="https://github.com/user-attachments/assets/15916b27-e5eb-4e3e-9b3d-72dfb3eaa32a" />
+
+## 3- We will change P2 to become Consumer.java (Withdraw 5)
+
+<img width="683" height="806" alt="consumer" src="https://github.com/user-attachments/assets/0cd1273c-ff85-4d8f-9d52-69cb65c0cfab" />
+
+## The Result
+
+<img width="516" height="973" alt="producer_consumer_result" src="https://github.com/user-attachments/assets/e573197b-7828-498f-81da-428034891346" />
+
+
+
+
+
+
+
 
