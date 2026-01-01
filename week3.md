@@ -1,4 +1,4 @@
-<img width="359" height="91" alt="Screenshot from 2026-01-01 21-11-37" src="https://github.com/user-attachments/assets/a8d3a3eb-e2f4-40bd-89c0-5b4122b2a557" /># Java RMI (Remote Method Invocation)
+# Java RMI (Remote Method Invocation)
 
 ### what the RMI
 
@@ -138,3 +138,64 @@ public class HelloClient {
 <img width="1129" height="96" alt="09 run_policy_client" src="https://github.com/user-attachments/assets/49a32401-0404-41cc-91f2-7c92c7b4d5af" />
 
 ---
+
+## Task 2 - passing parameter when calling method over the network and returning a custom response
+
+- instead of only `sayHello()`
+- you add `sayHelloTo(String name)`
+
+### 1. Update HelloInterface.java to make the method accept name parameter
+
+``` java
+//    public String sayHello() throws java.rmi.RemoteException;
+    public String sayHello(String name) throws java.rmi.RemoteException;
+```
+
+<img width="661" height="104" alt="10 update_Hello_Interface" src="https://github.com/user-attachments/assets/126299fb-81bf-42ab-9c7c-90746d17df36" />
+
+### 2. Update HelloServer.java to make the method accept name parameter
+
+``` java
+//    public static final String MESSAGE = "Hello World";
+    public static final String MESSAGE = "The Server says hello to";
+
+//    @Override
+//    public String sayHello(String name) throws RemoteException {
+//        return MESSAGE;
+//    }
+
+    @Override
+    public String sayHello(String name) throws RemoteException {
+        return MESSAGE + " " + name;
+    }
+```
+
+<img width="637" height="233" alt="11 update_Hello_Server" src="https://github.com/user-attachments/assets/fbcd2c2a-f81c-43c9-8dbe-9c3ca82371fe" />
+
+### 3. Update HelloClient.java to pass the name as an argument in method
+
+``` java
+//            String message = stub.sayHello();
+            String message = stub.sayHello("Omnia");
+```
+
+<img width="456" height="41" alt="12 update_Hello_Client" src="https://github.com/user-attachments/assets/72419764-3cde-48dd-ad75-0f63de2b6b9f" />
+
+### 4. Run the server
+
+<img width="755" height="136" alt="04 RMI_server" src="https://github.com/user-attachments/assets/12630b25-f62d-45b2-817a-5a194aca3589" />
+
+### 5. Run the client
+
+<img width="759" height="96" alt="13 client_sends_name" src="https://github.com/user-attachments/assets/ccfa94fb-7e15-454e-ae80-d1a6f6ef534e" />
+
+
+
+
+
+
+
+
+
+
+
