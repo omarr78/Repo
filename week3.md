@@ -1,4 +1,4 @@
-# Java RMI (Remote Method Invocation)
+<img width="359" height="91" alt="Screenshot from 2026-01-01 21-11-37" src="https://github.com/user-attachments/assets/a8d3a3eb-e2f4-40bd-89c0-5b4122b2a557" /># Java RMI (Remote Method Invocation)
 
 ### what the RMI
 
@@ -115,5 +115,26 @@ public class HelloClient {
 
 <img width="757" height="97" alt="05 RMI_client" src="https://github.com/user-attachments/assets/49db7e55-7b00-4a9b-a8e4-e75963402f49" />
 
+### 4. Run the server on other machine and run the client your machine
 
+### Use `192.168.1.10` instead of `localhost` in HelloClient.java
 
+<img width="359" height="86" alt="06 localhost" src="https://github.com/user-attachments/assets/13c71f7c-4e91-4bf1-8a86-531f5546e456" />
+
+### Since `System.setSecurityManager(new RMISecurityManager());` is deprecated 
+
+### The modern approach is to use a policy file without ever calling `System.setSecurityManager`
+
+### Create server.policy & client.policy
+
+<img width="413" height="91" alt="07 client policy" src="https://github.com/user-attachments/assets/5fc8d58e-d08c-47e6-93d5-0699873ba927" />
+
+### Then run your server
+
+<img width="1131" height="164" alt="08 run_policy_server" src="https://github.com/user-attachments/assets/8d4ab305-9d30-41d5-8da6-a0df90c847e5" />
+
+### and run the client on another machine
+
+<img width="1129" height="96" alt="09 run_policy_client" src="https://github.com/user-attachments/assets/49a32401-0404-41cc-91f2-7c92c7b4d5af" />
+
+---
