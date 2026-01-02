@@ -10,3 +10,15 @@
 * Java compiler does not know where this library is
 * Solution → Set CLASSPATH
 
+### 2. Set CLASSPATH
+
+* Go to Home Directory `cd`
+
+<img width="447" height="27" alt="open_bash_profile" src="https://github.com/user-attachments/assets/69f8f2fb-339e-4fac-9848-9ab2ea778597" />
+
+* open `.bash_profile` with nano and add these 2 lines at the bottom
+
+<img width="1284" height="690" alt="03 nano_bash_profile" src="https://github.com/user-attachments/assets/cc69baae-22b1-4d70-8989-74ceccb5a398" />
+
+
+
