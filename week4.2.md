@@ -20,5 +20,11 @@
 
 <img width="1284" height="690" alt="03 nano_bash_profile" src="https://github.com/user-attachments/assets/cc69baae-22b1-4d70-8989-74ceccb5a398" />
 
+* Save and exit nano
+* Apply the Changes with `source .bash_profile` and Verify CLASSPATH
+
+<img width="706" height="64" alt="04 verify_classPath" src="https://github.com/user-attachments/assets/e06d93da-0969-456f-9748-83f8f8b9a9a9" />
+
+
 
 
