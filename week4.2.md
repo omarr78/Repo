@@ -32,3 +32,13 @@
 ### 3. Restart Tomcat
 
 <img width="1290" height="395" alt="06 restart_tomcat" src="https://github.com/user-attachments/assets/d90f56cf-c7de-4c88-b6f8-405028745b0d" />
+
+### 4. Test Servlets in Browser
+
+* Run HelloWorld servlet `http://localhost:8080/ci502/helloW`
+<img width="390" height="131" alt="07 helloWorld_servlet" src="https://github.com/user-attachments/assets/1e1a2829-ea4f-46bf-ada0-efb998172cb0" />
+
+* Run MyServlet servlet `http://localhost:8080/ci502/mysrv`
+
+<img width="343" height="190" alt="08 myServlet" src="https://github.com/user-attachments/assets/e0e420b4-e666-4d15-8e14-3469205a59b9" />
+
