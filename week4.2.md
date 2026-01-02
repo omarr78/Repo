@@ -25,6 +25,10 @@
 
 <img width="706" height="64" alt="04 verify_classPath" src="https://github.com/user-attachments/assets/e06d93da-0969-456f-9748-83f8f8b9a9a9" />
 
+* Compile Servlets Again and should compile successfully
 
+<img width="1161" height="114" alt="05 compile_successfully" src="https://github.com/user-attachments/assets/187b6d73-0f8c-4272-aeea-15c7147651bc" />
 
+### 3. Restart Tomcat
 
+<img width="1290" height="395" alt="06 restart_tomcat" src="https://github.com/user-attachments/assets/d90f56cf-c7de-4c88-b6f8-405028745b0d" />
