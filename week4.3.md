@@ -50,7 +50,7 @@ param3 = value3
 
 <img width="1366" height="264" alt="05 params_sent" src="https://github.com/user-attachments/assets/9151b2b1-69f3-417f-9288-a0e0de791a20" />
 
-### 5. Create a new form & servlet package
+### 6. Create a new form & servlet package
 
 * create a new directory inside classes
 * copy servlet to new directory
@@ -61,10 +61,57 @@ param3 = value3
 * change the line `package forms;` with new package `package new_forms;`
 * and change `@WebServlet("/threeParams")` with `@WebServlet("/threeParamsNew")`
 
-<img width="1353" height="718" alt="07 modify_on_servlet" src="https://github.com/user-attachments/assets/3ee830d9-c416-41dd-b910-28ca3963a55e" />
+<img width="1354" height="718" alt="07 modify_on_servlet" src="https://github.com/user-attachments/assets/8038ef48-492c-4339-93fe-3923b3c5ef4f" />
+
 
 * Save and exit
 
 * Compile the new servlet
 
 <img width="1354" height="27" alt="08 compile_newServlet" src="https://github.com/user-attachments/assets/39b4390b-05a7-4985-8806-0b3fa6854b55" />
+
+* Copy and modify the html form with `nano three-params-form-new.html`
+
+<img width="1354" height="112" alt="09 copy_edit_html" src="https://github.com/user-attachments/assets/81c97a77-cb2e-4098-aa2c-8a4068378813" />
+
+* Change the form action
+
+<img width="1354" height="718" alt="10 modify_html" src="https://github.com/user-attachments/assets/c1e0752d-ff73-47ec-8012-793a105699fe" />
+
+
+* Restart Tomcat
+
+<img width="1358" height="376" alt="11 restart_tomcat" src="https://github.com/user-attachments/assets/6f7cf901-2829-40fe-95c2-ceae531b04c6" />
+
+### 7. Test the NEW servlet & form
+
+* Direct servlet call `http://localhost:8080/ci502/threeParamsNew`
+* And shows null values
+
+<img width="1366" height="268" alt="12 invoke_servlet_again" src="https://github.com/user-attachments/assets/43c74e7f-b162-4349-9f7f-402cf25291e3" />
+
+### Invoke servlet using the form
+
+* now open `http://localhost:8080/ci502/three-params-form-new.html`
+* Enter values in the three text boxes
+* Click Submit
+* The form sends data to the servlet
+
+<img width="1366" height="273" alt="13 enter_values_again" src="https://github.com/user-attachments/assets/6a05d208-2b27-45da-8464-70c93d6ef322" />
+
+
+* now Expected output
+
+``` text
+param1 = value1
+param2 = value2
+param3 = value3
+```
+
+<img width="1366" height="257" alt="14 params_sent_again" src="https://github.com/user-attachments/assets/348e9cb6-0d84-4b4b-9f56-6b5019b68546" />
+
+---
+
+
+
+
