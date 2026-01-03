@@ -31,5 +31,23 @@ param3 = null
 
 <img width="1366" height="280" alt="03 invoke_servlet" src="https://github.com/user-attachments/assets/3223ce78-3127-4ff2-beb6-711660d47a31" />
 
-###
+### Invoke servlet using the form
+
+* now open `http://localhost:8080/ci502/three-params-form.html`
+* Enter values in the three text boxes
+* Click Submit
+* The form sends data to the servlet
+
+<img width="1366" height="275" alt="04 enter_values" src="https://github.com/user-attachments/assets/28b4b9bb-b1f0-4095-b4a0-1e8a0652d97c" />
+
+* now Expected output
+
+``` text
+param1 = value1
+param2 = value2
+param3 = value3
+```
+
+<img width="1366" height="264" alt="05 params_sent" src="https://github.com/user-attachments/assets/9151b2b1-69f3-417f-9288-a0e0de791a20" />
+
 
