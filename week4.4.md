@@ -17,3 +17,35 @@
 ### 4. Restart Tomcat
 
 <img width="1358" height="376" alt="04 restart_tomcat" src="https://github.com/user-attachments/assets/9a67d4ed-b264-4c20-a413-d8f4286dca6d" />
+
+### 5. Test servlet directly
+
+* open browser and go to `http://localhost:8080/ci502/img`
+* Expected result -> the image itself appears in the browser
+
+<img width="1366" height="768" alt="05 test_servlet" src="https://github.com/user-attachments/assets/5407f86a-15fe-4ace-8853-b042da4946dc" />
+
+### 6. Invoke the servlet from an HTML file
+
+* create an HTML file with `nano ci502/show-image.html`
+* Write HTML code
+
+<img width="1353" height="719" alt="06 HTML_code" src="https://github.com/user-attachments/assets/90c28e6e-f8b3-4772-8fc4-0de9e198f397" />
+
+* Save and exit
+
+* Now test via HTML page
+
+* Open your browser, go to `http://localhost:8080/ci502/show-image.html`
+
+* Expected result, Page loads, Image is displayed
+
+* Image is coming from the servlet, not directly from disk
+
+
+<img width="1366" height="768" alt="07 open_html_page" src="https://github.com/user-attachments/assets/14596acb-09a2-444c-bbff-9aab8c32543c" />
+
+
+
+
+
