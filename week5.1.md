@@ -72,5 +72,20 @@
 * `request.getRemoteAddr()` shows client IP
 * Tomcat sees your browser as a network client
 
+### 6. Mixing Scriptlets and HTML
+
+* Goal: Generate an HTML table with numbers 1 to N
+* Create `Table.jsp` with `nano Table.jsp`
+
+<img width="1354" height="720" alt="12 table_jsp" src="https://github.com/user-attachments/assets/9aacc8d6-5573-4cb6-8090-ade5f5446c65" />
+
+* Test Table.jsp by open `http://localhost:8080/ci502/jsp/Table.jsp`
+
+<img width="1366" height="490" alt="13 open_table_jsp" src="https://github.com/user-attachments/assets/3c79843a-1954-4855-ae33-6cc9584e5dab" />
+
+
+
+
+
 
 
