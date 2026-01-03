@@ -50,4 +50,21 @@ param3 = value3
 
 <img width="1366" height="264" alt="05 params_sent" src="https://github.com/user-attachments/assets/9151b2b1-69f3-417f-9288-a0e0de791a20" />
 
+### 5. Create a new form & servlet package
 
+* create a new directory inside classes
+* copy servlet to new directory
+
+<img width="1312" height="157" alt="06 new_servlet_directory" src="https://github.com/user-attachments/assets/8845ad1c-c66f-4e0e-979c-a8700fe7814c" />
+
+* Modify the servlet for the new package with `nano new_forms/ThreeParams.java`
+* change the line `package forms;` with new package `package new_forms;`
+* and change `@WebServlet("/threeParams")` with `@WebServlet("/threeParamsNew")`
+
+<img width="1353" height="718" alt="07 modify_on_servlet" src="https://github.com/user-attachments/assets/3ee830d9-c416-41dd-b910-28ca3963a55e" />
+
+* Save and exit
+
+* Compile the new servlet
+
+<img width="1354" height="27" alt="08 compile_newServlet" src="https://github.com/user-attachments/assets/39b4390b-05a7-4985-8806-0b3fa6854b55" />
