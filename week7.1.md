@@ -59,4 +59,61 @@
 
 <img width="1366" height="317" alt="09 test_helloworld" src="https://github.com/user-attachments/assets/14e07787-17ef-45d8-a5d4-897e5a67b676" />
 
+### 4. Modify JSF UI
+
+
+* Edit the home.xhtml with `nano home.xhtml`
+
+<img width="1353" height="717" alt="10 edit_home_xhtml" src="https://github.com/user-attachments/assets/4e80c2ca-a0f2-4c08-af24-0669078ef05d" />
+
+* Save and exit
+* Rebuild & redeploy
+
+<img width="789" height="201" alt="07 build_war" src="https://github.com/user-attachments/assets/86ce275d-10cd-4a9b-9691-aae81f62bb0a" />
+
+<img width="1357" height="71" alt="08 deploy_helloworld_war" src="https://github.com/user-attachments/assets/a7d1ce91-7925-434c-bedf-e74d3c7b247d" />
+
+* Refresh browser and you should see this
+
+<img width="1366" height="387" alt="11 test_helloworld1" src="https://github.com/user-attachments/assets/d5825411-cb2e-4988-8cf2-9265be58492c" />
+
+* Change the font style
+* Edit the home.xhtml with `nano home.xhtml`
+
+<img width="1352" height="717" alt="12 edit_home_xhtml_1" src="https://github.com/user-attachments/assets/ca9921eb-984f-48f5-8ef8-1a5cfe7607f0" />
+
+* Rebuild & redeploy
+
+<img width="789" height="201" alt="07 build_war" src="https://github.com/user-attachments/assets/86ce275d-10cd-4a9b-9691-aae81f62bb0a" />
+
+<img width="1357" height="71" alt="08 deploy_helloworld_war" src="https://github.com/user-attachments/assets/a7d1ce91-7925-434c-bedf-e74d3c7b247d" />
+
+
+* Refresh browser and you should see this
+
+<img width="1366" height="432" alt="13 test_helloworld_2" src="https://github.com/user-attachments/assets/89df528a-500f-4eec-8164-b235e5d3cadf" />
+
+
+
+### 5. Hello World from JSF Bean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
