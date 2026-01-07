@@ -59,7 +59,8 @@
 * Open your browser and go to `http://localhost:8080/ci502/mvc/users.jsp`
 * Enter your email and password
 
-<img width="1366" height="563" alt="08 enter_data" src="https://github.com/user-attachments/assets/6af95f85-443b-4563-8788-49001e0f0ea7" />
+<img width="1366" height="768" alt="10 enter_data" src="https://github.com/user-attachments/assets/b93efada-90ba-4e82-b789-2145b2fcbabd" />
+
 
 * Click submit
 
@@ -67,9 +68,10 @@
 
       User Validated!
 
-      Welcome, Omar@test.com
+      Welcome, admin@test.com
 
-<img width="1366" height="490" alt="09 result" src="https://github.com/user-attachments/assets/b42f0796-dbf6-4ca3-849f-8c807803bfc7" />
+<img width="1366" height="612" alt="11 result" src="https://github.com/user-attachments/assets/a95d0b43-5aa8-46d3-ab7e-8a790ffc7f52" />
+
 
 
 
