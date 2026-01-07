@@ -59,6 +59,8 @@
 
 <img width="1366" height="317" alt="09 test_helloworld" src="https://github.com/user-attachments/assets/14e07787-17ef-45d8-a5d4-897e5a67b676" />
 
+---
+
 ### 4. Modify JSF UI
 
 
@@ -93,27 +95,73 @@
 
 <img width="1366" height="432" alt="13 test_helloworld_2" src="https://github.com/user-attachments/assets/89df528a-500f-4eec-8164-b235e5d3cadf" />
 
-
+---
 
 ### 5. Hello World from JSF Bean
 
+* Unzip hellojsfbean.zip
+
+<img width="1358" height="662" alt="14 unzip" src="https://github.com/user-attachments/assets/18473fe4-8e1d-4efa-8f00-e91a8a28a7a5" />
+
+* Structure should be:
 
 
-...
+<img width="422" height="222" alt="15 folder_structure" src="https://github.com/user-attachments/assets/9f3a1463-cf56-4e67-b53c-613b9657b026" />
+
+---
+
+### 6. Understand the Bean
 
 
+* open `nano classes/ci502/jsf/HelloWorld.java`
+* You will see this
+
+<img width="1366" height="768" alt="16 nano_helloworld_java" src="https://github.com/user-attachments/assets/a96f2aff-7454-4398-8885-1b4302e1d561" />
 
 
+* JSF calls this using: `#{helloWorld.getMessage()}`
 
 
+---
 
+### 7. Set CLASSPATH for JSF Beans
 
+* Extract jars.zip
 
+<img width="654" height="180" alt="17 unzip_jars" src="https://github.com/user-attachments/assets/b5beaed3-209c-437e-860c-5da41cf055b3" />
 
+* You will get 2 jar files
+* Edit .bash_profile
 
+<img width="1366" height="611" alt="18 edit_bash_profile" src="https://github.com/user-attachments/assets/26ab910e-2ac6-4528-912a-1c7cecaedb2e" />
 
+* Apply changes: `source .bash_profile`
 
+* Check: `echo $CLASSPATH`
 
+<img width="1355" height="137" alt="19 class_path" src="https://github.com/user-attachments/assets/c79bedc0-f1b3-4165-8513-e3ec16e86f01" />
 
+---
+
+### 8. Compile JSF Bean
+
+<img width="846" height="21" alt="20 compile" src="https://github.com/user-attachments/assets/cc92209d-cf6e-425a-b9d6-84b1f5baa510" />
+
+---
+
+### 9. Build & Deploy & Run JSF Bean App
+
+* Build WAR file
+
+<img width="855" height="374" alt="21 build_war" src="https://github.com/user-attachments/assets/979d2d52-bb5c-4802-bc59-29f380ee4403" />
+
+* Deploy
+
+<img width="1236" height="25" alt="22 deploy" src="https://github.com/user-attachments/assets/1c3a381e-75a1-4ba3-9b93-f66acae4c5db" />
+
+* Run JSF Bean App
+* Open browser: `http://localhost:8080/hellojsfbean/home.jsf`
+
+<img width="1366" height="343" alt="23 run" src="https://github.com/user-attachments/assets/39d455d9-adaa-4d3d-80e0-9d7f775bcf22" />
 
 
