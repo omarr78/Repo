@@ -63,3 +63,23 @@
 
 <img width="1006" height="91" alt="12 files_generated_from_site" src="https://github.com/user-attachments/assets/dad551ee-5b42-4cb5-85a1-391ba5b4b3dc" />
 
+### 2. Building Existing Project with Maven (NumOps)
+
+* Generate Maven structure
+
+<img width="1766" height="795" alt="13 generating_project_again" src="https://github.com/user-attachments/assets/6cb27141-929d-4db7-ba4c-2b570c92fd40" />
+
+* Move Java files
+* Go to: `cd NumOps/src/main/java/bton/ci502`
+* Then copy files
+
+<img width="1035" height="64" alt="14 copy_files" src="https://github.com/user-attachments/assets/f5a05864-434b-48dd-a3b0-95c686f58d95" />
+
+* Delete App.java with `rm App.java`
+
+* Add Unit Test
+* Copy NumOpsTest.java
+
+* Delete AppTest.java with `rm AppTest.java`
+
+* Run tests with `mvn test` if no error success
