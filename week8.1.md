@@ -73,13 +73,26 @@
 * Go to: `cd NumOps/src/main/java/bton/ci502`
 * Then copy files
 
-<img width="1035" height="64" alt="14 copy_files" src="https://github.com/user-attachments/assets/f5a05864-434b-48dd-a3b0-95c686f58d95" />
+<img width="889" height="69" alt="14 copy_files" src="https://github.com/user-attachments/assets/65455e6b-5710-4575-81b8-e4e46408b8ee" />
+
+
 
 * Delete App.java with `rm App.java`
+
+<img width="676" height="21" alt="15 remove_app_java" src="https://github.com/user-attachments/assets/c33e7806-7004-4e44-a921-b208e304e781" />
+
+
+* Delete AppTest.java with `rm AppTest.java`
+
+<img width="727" height="19" alt="16 remove_AppTest_java" src="https://github.com/user-attachments/assets/7250a899-bd83-4943-8929-1cce509c6fd2" />
 
 * Add Unit Test
 * Copy NumOpsTest.java
 
-* Delete AppTest.java with `rm AppTest.java`
+<img width="961" height="23" alt="17 copy_tests" src="https://github.com/user-attachments/assets/29a04b00-095a-446a-a79c-9b92d895159a" />
+
 
 * Run tests with `mvn test` if no error success
+
+<img width="802" height="365" alt="18 test_result" src="https://github.com/user-attachments/assets/344fc213-de3a-4b43-b991-91f4998615a5" />
+
