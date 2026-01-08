@@ -177,20 +177,23 @@ In JSF:
 
 * Create WAR file & Deploy
 
+<img width="1267" height="312" alt="34 create_war_deploy" src="https://github.com/user-attachments/assets/1a7509a4-47c4-4690-a8e7-e26e657775e5" />
 
+* Test in Browser open `http://localhost:8080/register2/index.jsf`
 
+* first we leave firstname and lastname and click on submit
 
+<img width="1366" height="562" alt="35 input_form" src="https://github.com/user-attachments/assets/15a0ce77-8ceb-4dd6-ad2e-01f395208f7e" />
 
+<img width="1366" height="381" alt="36 error_page" src="https://github.com/user-attachments/assets/b8ab6874-a4a4-4fdf-9000-950017a0467b" />
 
+* Then we enter the firstname and the lastname
 
+<img width="1366" height="556" alt="37 enter_test" src="https://github.com/user-attachments/assets/21e6dadd-68aa-449c-b166-bc6276cf04f4" />
 
+<img width="1366" height="396" alt="38 regestration_successful" src="https://github.com/user-attachments/assets/e178c5c9-76e2-4c17-9e46-aa515176af12" />
 
-
-
-
-
-
-
+---
 
 
 
