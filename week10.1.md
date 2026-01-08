@@ -73,3 +73,11 @@
 | SHA-512   | 128 chars   |
 
 * Stronger algorithms → Longer digests
+
+---
+
+### 3. Caesar Cipher & DES in Java
+
+* Now we move to Java encryption programs
+
+
