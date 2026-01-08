@@ -108,3 +108,91 @@ In JSF:
 
 <img width="1366" height="239" alt="22 you_lost" src="https://github.com/user-attachments/assets/e9f4a888-9657-4f7e-8bbc-99e2e4d4c289" />
 
+---
+
+### 3. USER REGISTRATION (register.zip)
+
+* unzip register.zip
+
+<img width="1354" height="707" alt="23 unzip_register" src="https://github.com/user-attachments/assets/4ee299bd-d5b8-4227-ad66-228ebf343435" />
+
+* Compiler User.java
+
+<img width="832" height="25" alt="24 compile_user_java" src="https://github.com/user-attachments/assets/26c783b3-048f-4bad-84e9-e00d5573752c" />
+
+* Create WAR & Deploy
+
+<img width="1245" height="423" alt="25 create_war_deploy" src="https://github.com/user-attachments/assets/41057840-5e25-44ed-9767-0dbddbb795ac" />
+
+* Test register
+* Open `http://localhost:8080/register`
+
+<img width="1366" height="407" alt="25 test_register" src="https://github.com/user-attachments/assets/bc5e09d5-ce47-417d-9b6e-7472f28ee470" />
+
+---
+
+### 4. YOUR OWN REGISTRATION APP
+
+### Requirements
+
+#### 1. First name
+
+#### 2. Last name
+
+#### 3. If missing → error page
+
+#### 4. If OK → results page with <ul>
+
+
+* Create Application Directory
+
+<img width="827" height="64" alt="27 create_app_directory" src="https://github.com/user-attachments/assets/cb0717a4-4e16-4342-ab1d-d2d559b34cc1" />
+
+* Your structure should now be:
+
+<img width="468" height="333" alt="28 app_structure" src="https://github.com/user-attachments/assets/0b6cbf84-2367-426f-8aab-8434385f025a" />
+
+* Create RegisterBean.java with `nano WEB-INF/classes/ci502/register/RegisterBean.java`
+
+<img width="1855" height="1050" alt="29 create_register_bean" src="https://github.com/user-attachments/assets/48196055-e436-49b3-ae0b-963ca09b9665" />
+
+* Save and exit
+
+* Compile the Bean
+
+<img width="976" height="46" alt="30 compile_bean" src="https://github.com/user-attachments/assets/5207d260-e3e9-408a-bad7-250e5f02f7a9" />
+
+* Create index.xhtml (Input Form) with `nano index.xhtml`
+
+<img width="1366" height="768" alt="31 create_index_xhtml" src="https://github.com/user-attachments/assets/424ddc8e-be66-42ac-9b3d-61bb69dcab21" />
+
+* Create result.xhtml with `nano result.xhtml`
+
+<img width="1366" height="768" alt="32 result_xhtml" src="https://github.com/user-attachments/assets/b620715a-1625-4ffb-b186-56eafd90b3ec" />
+
+* Create error.xhtml with `nano error.xhtml`
+
+
+<img width="1366" height="768" alt="33 error_xhtml" src="https://github.com/user-attachments/assets/bee692b8-85b4-4c0c-b163-b5874a2cf46c" />
+
+* Create WAR file & Deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
