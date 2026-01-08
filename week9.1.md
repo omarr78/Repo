@@ -1,0 +1,6 @@
+# JPA EXERCISES
+## PART I — JPA STANDALONE APPLICATION
+
+### Task1: MySQL Database Setup
+
+* 
