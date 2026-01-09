@@ -140,12 +140,29 @@ Step 3: Add Application User (appuser)
 
 ---
 
+## TASK 6: BASIC Authentication (web.xml + glassfish-web.xml)
+
+### What is BASIC Authentication?
+
+* Browser shows a popup login dialog
+* Username + password
+* Controlled via XML
+* No Java code changes
+
+### Step 1: Download `filerealmbasicauth.zip`
+
+<img width="1366" height="768" alt="15 unzip_project" src="https://github.com/user-attachments/assets/445f384b-bbf6-492e-b5f9-5080b99e1ebe" />
 
 
+### Step 2: Create the WAR File
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5a78e219-a338-4de2-8413-de39635bfe97" />
 
+### Step 3: Deploy the Application to GlassFish
 
+<img width="1353" height="89" alt="17 deploy" src="https://github.com/user-attachments/assets/ede2fedf-0982-4e20-bb7b-2346100c55b7" />
 
+### Step 4: Run the Application
 
 
 
