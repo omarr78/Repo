@@ -98,15 +98,13 @@ Step 2: Add Admin User (adm)
 * Fill in:
 
   * User ID: adm
-  * Group List: admin
+  * Group List: AdminUser
   * Password: (choose one)
   * Confirm Password
 
-* Click OK
+* Click Save
 
-
-<img width="1366" height="725" alt="12 enter_data_click_ok_again" src="https://github.com/user-attachments/assets/5beb531b-4baf-468c-bed9-c48d568a9232" />
-
+<img width="1366" height="683" alt="12 enter_data_click_ok_again" src="https://github.com/user-attachments/assets/bd505b5c-2d2e-490e-a0f8-582c912c5510" />
 
 * This user:
 
@@ -136,7 +134,8 @@ Step 3: Add Application User (appuser)
 
 * You should now have users like:
 
-<img width="1366" height="142" alt="14 users_list" src="https://github.com/user-attachments/assets/4a6eddcc-71ad-479a-88f1-c9bb1eb11329" />
+<img width="1117" height="145" alt="14 users_list" src="https://github.com/user-attachments/assets/d9f122d2-d02e-4af2-b625-37608ef2bdb2" />
+
 
 ---
 
@@ -156,16 +155,37 @@ Step 3: Add Application User (appuser)
 
 ### Step 2: Create the WAR File
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5a78e219-a338-4de2-8413-de39635bfe97" />
+<img width="808" height="134" alt="16 create_war_file" src="https://github.com/user-attachments/assets/8c035659-be89-49de-b765-3fda9f0ae5ce" />
+
 
 ### Step 3: Deploy the Application to GlassFish
 
-<img width="1353" height="89" alt="17 deploy" src="https://github.com/user-attachments/assets/ede2fedf-0982-4e20-bb7b-2346100c55b7" />
+<img width="1366" height="680" alt="17 click_deploy" src="https://github.com/user-attachments/assets/25bc9228-48b2-4a13-a7ec-974de9568bfd" />
+
+* Browse -> Choose target/war file
+
+<img width="1366" height="682" alt="18 browse_ok" src="https://github.com/user-attachments/assets/d8ab511c-06bf-4833-94da-5a035b2b77d7" />
+
 
 ### Step 4: Run the Application
 
+* Open browser and go to: `http://localhost:8080/filerealmbasicauth`
 
 
+<img width="1366" height="768" alt="19 popup" src="https://github.com/user-attachments/assets/d5a9456e-e032-497a-8955-e8413d4a5df1" />
+
+* We will sign in with `user1` : `appuser`
+
+<img width="1366" height="201" alt="20 filerealmbasicauth_page" src="https://github.com/user-attachments/assets/1393cf24-ecb7-4562-b656-165d7d2cdccf" />
+
+* But if we want to access some admin page the respone will be `HTTP Status 403 - Forbidden`
+
+<img width="1366" height="537" alt="21 forbidden" src="https://github.com/user-attachments/assets/c3703bf2-a07c-4f61-a152-d96cd436696f" />
 
 
+* But if we sign in with `adm` : `AdminUser` it will open
+
+<img width="1366" height="768" alt="22 popup_again" src="https://github.com/user-attachments/assets/379e2425-cb46-4d8b-9d73-3fec7c0f2a01" />
+
+<img width="1366" height="197" alt="23 admin_page" src="https://github.com/user-attachments/assets/c5b1dffb-abe0-422d-a681-828377af3d86" />
 
