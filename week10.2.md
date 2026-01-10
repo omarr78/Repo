@@ -189,3 +189,93 @@ Step 3: Add Application User (appuser)
 
 <img width="1366" height="197" alt="23 admin_page" src="https://github.com/user-attachments/assets/c5b1dffb-abe0-422d-a681-828377af3d86" />
 
+---
+
+## Task 7 — FORM-based Authentication
+
+
+
+**What changes from BASIC?**
+
+| BASIC               | FORM               |
+| ------------------- | ------------------ |
+| Browser popup       | Custom login page  |
+| No UI control       | Full UI control    |
+|  auth-method=BASIC  |  auth-method=FORM  |
+
+
+### What you need for FORM authentication
+
+You must provide 2 pages:
+
+* Login page `/login.jsp`
+
+* Error page `/login-error.jsp`
+
+### 1. Create Login page with `nano login.jsp`
+
+<img width="1366" height="768" alt="24 login_jsp" src="https://github.com/user-attachments/assets/9897321d-864b-4b6f-b013-f3d916f6d1b2" />
+
+### 2. Create Error page with `nano login-error.jsp`
+
+<img width="1366" height="768" alt="25 login_error_jsp" src="https://github.com/user-attachments/assets/d5dfc3bd-d86e-4274-a9e8-abc90ad7a1a0" />
+
+### 3. Update `web.xml` for FORM authentication
+
+<img width="1855" height="1047" alt="26 web_xml" src="https://github.com/user-attachments/assets/c352486a-64f7-4535-9349-82b53b6031ee" />
+
+
+* Replace this (BASIC):
+``` jsp
+<login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>file</realm-name>
+</login-config>
+```
+
+* With this (FORM):
+
+``` jsp
+
+<login-config>
+    <auth-method>FORM</auth-method>
+    <realm-name>file</realm-name>
+    <form-login-config>
+        <form-login-page>/login.jsp</form-login-page>
+        <form-error-page>/login-error.jsp</form-error-page>
+    </form-login-config>
+</login-config>
+```
+
+
+* Build the application (Maven)
+
+<img width="808" height="134" alt="16 create_war_file" src="https://github.com/user-attachments/assets/c024e0f8-59ec-4925-8707-1bb27b967fa3" />
+
+* Deploy to GlassFish
+
+<img width="1366" height="680" alt="17 click_deploy" src="https://github.com/user-attachments/assets/56b04a95-e196-499c-afd8-5f9cbd6122ee" />
+
+<img width="1366" height="682" alt="18 browse_ok" src="https://github.com/user-attachments/assets/6b209691-5e35-442f-a22d-768f3fe4714a" />
+
+
+* Test FORM authentication open `http://localhost:8080/filerealmbasicauth`
+
+
+* Expected behavior
+* If Not logged in: Redirected automatically to: `/login.jsp`
+
+<img width="1366" height="768" alt="Screenshot from 2026-01-10 01-56-33" src="https://github.com/user-attachments/assets/4c229410-df3d-4ce1-a968-b966e2181cca" />
+
+* Wrong credentials: Redirected to: `/login-error.jsp`
+
+<img width="1366" height="768" alt="Screenshot from 2026-01-10 01-57-12" src="https://github.com/user-attachments/assets/517cebb6-e8a4-47e3-ab7a-b063f424db33" />
+
+<img width="1366" height="768" alt="Screenshot from 2026-01-10 01-57-20" src="https://github.com/user-attachments/assets/48313c21-f1c1-403a-84c6-e9e1168699dc" />
+
+* Normal user (user1) & Admin user (adm) -> `Congratulations! You have successfully logged into the application.`
+
+<img width="1366" height="768" alt="Screenshot from 2026-01-10 01-57-35" src="https://github.com/user-attachments/assets/22325883-1b72-461e-bcc0-6a833cfe7ab0" />
+
+
+<img width="1366" height="768" alt="Screenshot from 2026-01-10 01-57-41" src="https://github.com/user-attachments/assets/5e7e184a-74fe-495d-940c-e2ceda73f239" />
