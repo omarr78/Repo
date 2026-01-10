@@ -99,3 +99,42 @@
 
 ---
 
+### TASK 4 — FIRST JPA APPLICATION (MAVEN)
+
+### Step 1: Create Project Structure
+
+<img width="695" height="45" alt="13 create_project_structure" src="https://github.com/user-attachments/assets/6012d4c3-5a8e-4740-a04a-35039cba44aa" />
+
+* Required Files
+
+* You must have:
+
+<img width="378" height="335" alt="14 project_structure" src="https://github.com/user-attachments/assets/4e6ab219-8ad6-4a4d-b4b1-d7f2a0a6bb27" />
+
+
+* From My Studies,  download Book.java and Main.java and save them in the ci502 directory
+* Also, save the file persistence.xml in META-INF directory and pom.xml in the firstJPA directory
+* Open these files and try to understand the code
+
+<img width="887" height="619" alt="19 java_code" src="https://github.com/user-attachments/assets/ef47b287-25eb-4667-a70f-ca51e5225569" />
+
+* open persistence.xml and modify it to represent your own details
+
+<img width="1366" height="768" alt="15 modify_presistance" src="https://github.com/user-attachments/assets/5f977d20-92ce-4428-8f2d-1bf4620a38d7" />
+
+* Compile and Package
+
+<img width="448" height="27" alt="16 compile" src="https://github.com/user-attachments/assets/0e87850c-a153-41fb-a3e3-c14b275527fa" />
+
+<img width="448" height="26" alt="17 package" src="https://github.com/user-attachments/assets/c50ce8f3-2f85-4ea3-b7e6-b1f7c0427148" />
+
+
+* Run JPA Application
+
+<img width="821" height="26" alt="18 run" src="https://github.com/user-attachments/assets/953933f5-f0bc-41ba-bf0a-dfed46bbed09" />
+
+* Book should be inserted into database
+
+* Verify in MySQL with `SELECT * FROM book;`
+
+<img width="1124" height="648" alt="20 see_inserted_book" src="https://github.com/user-attachments/assets/6e116cf8-cb0e-4367-b79b-9f1550708e0c" />
