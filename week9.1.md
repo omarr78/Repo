@@ -80,10 +80,22 @@
 
 ---
 
+### TASK 3 — Simple Java MySQL Connection (JDBC)
 
+* Download `MySqlConnect.java`
+* Update java file to set your database values with `nano MySqlConnect.java`
 
+<img width="932" height="184" alt="10 update_values" src="https://github.com/user-attachments/assets/294dfd7c-654a-4310-a650-eb99c48a06cd" />
 
+* Compile `MySqlConnect.java`
 
+<img width="489" height="22" alt="11 compile" src="https://github.com/user-attachments/assets/3fc20453-a263-4cb4-9025-b20d3a081933" />
 
+* Run
 
+<img width="1366" height="768" alt="12 run" src="https://github.com/user-attachments/assets/0412f12e-2b6f-4b81-927c-b1e7603df8bc" />
+
+* You see that rows printed 
+
+---
 
