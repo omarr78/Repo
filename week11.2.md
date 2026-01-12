@@ -186,3 +186,92 @@ Command: `bin/hdfs dfs -mkdir -p /user/root`
 ### Result
 
 <img width="237" height="49" alt="17 view_output" src="https://github.com/user-attachments/assets/c632a878-6122-4c9c-9323-512eb1633d70" />
+
+---
+
+# Part 3: Counting words with Hadoop
+
+## What Is “WordCount” in Hadoop?
+
+### WordCount is the classic Hadoop example:
+
+* It reads text files
+* Counts how many times each word appears
+* Uses MapReduce
+* Stores results in HDFS
+
+
+### Example:
+
+* the     5231
+* and     4890
+* holmes  387
+
+## STEP 1: Put the Text File on Your Local Machine
+
+### What to do?
+
+* Download SherlockHolmes.txt from My Studies
+
+* Save it locally inside: `hadoop-3.4.1-lean/input/`
+
+<img width="632" height="27" alt="18 copy_text_file" src="https://github.com/user-attachments/assets/81a6acc5-2565-44ae-ba88-44aed8b1a069" />
+
+## STEP 2: Copy the Text File into HDFS
+
+### Why?
+
+* Hadoop processes files only from HDFS, not local disk.
+
+* Command: `bin/hdfs dfs -put input/SherlockHolmes.txt input`
+
+<img width="690" height="26" alt="19 put_into_hdfs" src="https://github.com/user-attachments/assets/3e8fd555-6f14-4155-81aa-4d85d71d72b1" />
+
+## STEP 3: Remove Old Output Directory (IMPORTANT)
+
+## Why?
+
+Hadoop will not overwrite output directories.
+
+Command: `bin/hdfs dfs -rm -r output`
+
+<img width="281" height="23" alt="20 remove_output_file" src="https://github.com/user-attachments/assets/a2f9c8d1-0997-43df-b6cb-810df5d79703" />
+
+<img width="161" height="26" alt="21 output_deleted" src="https://github.com/user-attachments/assets/3416f652-55e5-4290-8031-55d85497e6b9" />
+
+
+## STEP 4: Run WordCount MapReduce Job
+
+* Command: `bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.4.1.jar wordcount input output` 
+
+<img width="1345" height="47" alt="22 run_wordCount" src="https://github.com/user-attachments/assets/1ef7a17c-9bfb-47dd-88e8-503ec36374db" />
+
+## STEP 5: View WordCount Results (HDFS)
+
+* Command: `bin/hdfs dfs -cat output/*`
+
+<img width="1366" height="768" alt="23 output" src="https://github.com/user-attachments/assets/ee036b4e-1463-4ca5-b094-96deb4013ff8" />
+
+
+* Words are alphabetically sorted
+* Numbers = word frequency
+
+
+## STEP 6: Copy Results from HDFS → Local Machine
+
+### Why?
+
+* To read, save, or submit results.
+
+* Command: `bin/hdfs dfs -get output output`
+
+ <img width="325" height="27" alt="24 move_to_local" src="https://github.com/user-attachments/assets/f2fc5b71-1411-4635-8938-2e89e1e6a1f9" />
+
+* This creates a local directory: `hadoop-3.4.1-lean/output/`
+
+* To View locally: `cat output/*`
+
+<img width="138" height="26" alt="25 view_locally" src="https://github.com/user-attachments/assets/1db467cb-2b67-4b3c-8382-18984139d8d7" />
+
+<img width="1366" height="768" alt="23 output" src="https://github.com/user-attachments/assets/50be5dc6-5946-4cbd-9c81-81e4b982c8ea" />
+
